@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     33351,        843]
-NotebookOptionsPosition[     32230,        799]
-NotebookOutlinePosition[     32583,        815]
-CellTagsIndexPosition[     32540,        812]
+NotebookDataLength[     37173,        928]
+NotebookOptionsPosition[     35674,        871]
+NotebookOutlinePosition[     36027,        887]
+CellTagsIndexPosition[     35984,        884]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -77,8 +77,9 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[{{}, {{}, {
                   PointSize[0.125], 
                   GrayLevel[0.55], 
@@ -105,9 +106,10 @@ Cell[BoxData[
                PlotRangePadding -> {{1, 1}, {1, 1}}, Ticks -> {None, None}, 
                Axes -> False, AspectRatio -> 1, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}], Frame -> True, 
-               FrameTicks -> None, FrameStyle -> Directive[
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], Frame -> True, FrameTicks -> None, 
+               FrameStyle -> Directive[
                  Opacity[0.5], 
                  Thickness[Tiny], 
                  RGBColor[0.368417, 0.506779, 0.709798]]], 
@@ -142,8 +144,9 @@ Cell[BoxData[
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[{{}, {{}, {
                   PointSize[0.125], 
                   GrayLevel[0.55], 
@@ -170,9 +173,10 @@ Cell[BoxData[
                PlotRangePadding -> {{1, 1}, {1, 1}}, Ticks -> {None, None}, 
                Axes -> False, AspectRatio -> 1, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}], Frame -> True, 
-               FrameTicks -> None, FrameStyle -> Directive[
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], Frame -> True, FrameTicks -> None, 
+               FrameStyle -> Directive[
                  Opacity[0.5], 
                  Thickness[Tiny], 
                  RGBColor[0.368417, 0.506779, 0.709798]]], 
@@ -474,327 +478,395 @@ Cell[BoxData[
  CellChangeTimes->{3.700321776824007*^9}]
 }, Open  ]],
 
+Cell["Let\[CloseCurlyQuote]s choose a dataset.", "Text",
+ CellChangeTimes->{{3.701406595907302*^9, 3.701406603255674*^9}}],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"ExampleData", "[", 
+ RowBox[{"ExampleData", "[", "\"\<MachineLearning\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7014064429668837`*^9, 3.7014064551904287`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
   RowBox[{
    RowBox[{"{", 
-    RowBox[{"\"\<MachineLearning\>\"", ",", "\"\<Titanic\>\""}], "}"}], ",", 
-   "\"\<Description\>\""}], "]"}]], "Input",
- CellChangeTimes->{{3.700321630623117*^9, 3.7003216940880423`*^9}, {
-  3.7003219864034767`*^9, 3.7003220071005363`*^9}}],
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"BostonHomes\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"FisherIris\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"MNIST\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"MovieReview\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"Mushroom\"\>"}], "}"}], ",", 
+   
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"Satellite\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"Titanic\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"UCILetter\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MachineLearning\"\>", ",", "\<\"WineQuality\"\>"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.7014064456442547`*^9, 3.701406455929297*^9}}]
+}, Open  ]],
 
-Cell[BoxData["\<\"Classify whether a passenger on board the maiden voyage of \
-the RMS Titanic in 1912 survived given their age, sex and class.\"\>"], \
-"Output",
- CellChangeTimes->{
-  3.700321711857123*^9, {3.700322000741503*^9, 3.700322007819162*^9}}]
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"boston", " ", "=", " ", 
+   RowBox[{"ExampleData", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<MachineLearning\>\"", ",", "\"\<BostonHomes\>\""}], "}"}], 
+     ",", "\"\<TrainingData\>\""}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.701406606152446*^9, 3.701406625719152*^9}, 
+   3.701406818686764*^9, {3.7014077786853228`*^9, 3.701407779604944*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"boston", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.701407570714143*^9, 3.7014075757494087`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+   "0.02731`", ",", "0", ",", "7.07`", ",", "0", ",", "0.469`", ",", "6.421`",
+     ",", "78.9`", ",", "4.9671`", ",", "2", ",", "242", ",", "17.8`", ",", 
+    "396.9`", ",", "9.14`"}], "}"}], "\[Rule]", "21.6`"}]], "Output",
+ CellChangeTimes->{3.7014075763460827`*^9, 3.701407782921924*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"titanic", " ", "=", " ", 
-  RowBox[{"ExampleData", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"\"\<MachineLearning\>\"", ",", "\"\<Titanic\>\""}], "}"}], ",", 
-    "\"\<Data\>\""}], "]"}]}]], "Input",
- CellChangeTimes->{{3.700322010695614*^9, 3.700322037751268*^9}}],
+ RowBox[{"bostonpd", " ", "=", " ", 
+  RowBox[{"Predict", "[", "boston", "]"}]}]], "Input",
+ CellChangeTimes->{{3.701406640478888*^9, 3.701406679819075*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  TemplateBox[{RowBox[{
+      StyleBox[
+       TagBox["PredictorFunction", "SummaryHead"], "NonInterpretableSummary"], 
+      StyleBox["[", "NonInterpretableSummary"], 
+      DynamicModuleBox[{Typeset`open$$ = False}, 
+       PanelBox[
+        PaneSelectorBox[{False -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource[
+                 "FEBitmaps", "SquarePlusIconMedium"]], 
+                ButtonFunction :> (Typeset`open$$ = True), Appearance -> None,
+                 Evaluator -> Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}]], 
+              GraphicsBox[{{}, {{}, {
+                  PointSize[0.125], 
+                  GrayLevel[0.55], 
+                  
+                  PointBox[{{-1, 1.5}, {0, 2.3}, {1, 0.8}, {2, 2}, {3, 1.3}, {
+                    4, 4.}}]}, {
+                  GrayLevel[0.7], 
+                  AbsoluteThickness[1.5], 
+                  
+                  BSplineCurveBox[{{-1, 2}, {0, 2}, {1, 1}, {2, 1}, {4, 2}, {
+                   5, 4}}]}}, {}}, Axes -> {False, False}, 
+               AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, 
+               BaseStyle -> {FontFamily -> "Arial", 
+                 AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+               Frame -> {{True, True}, {True, True}}, 
+               FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+               Directive[
+                 Thickness[Tiny], 
+                 GrayLevel[0.7]], FrameTicks -> {{None, None}, {None, None}}, 
+               GridLines -> {None, None}, 
+               LabelStyle -> {FontFamily -> "Arial"}, 
+               Method -> {"ScalingFunctions" -> None}, 
+               PlotRange -> {All, All}, PlotRangeClipping -> True, 
+               PlotRangePadding -> {{1, 1}, {1, 1}}, Ticks -> {None, None}, 
+               Axes -> False, AspectRatio -> 1, ImageSize -> 
+               Dynamic[{
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+               FrameTicks -> None, FrameStyle -> Directive[
+                 Opacity[0.5], 
+                 Thickness[Tiny], 
+                 RGBColor[0.368417, 0.506779, 0.709798]]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"RandomForest\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Feature type: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\"NumericalVector\"", 
+                    StyleBox[
+                    TemplateBox[{"\" (\"", "13", "\")\""}, "RowDefault"], 
+                    GrayLevel[0.5], StripOnInput -> False]}, "RowDefault"], 
+                    "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}], True -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource[
+                 "FEBitmaps", "SquareMinusIconMedium"]], 
+                ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                None, Evaluator -> Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}]], 
+              GraphicsBox[{{}, {{}, {
+                  PointSize[0.125], 
+                  GrayLevel[0.55], 
+                  PointBox[{{-1, 1.5}, {0, 2.3}, {1, 0.8}, {2, 2}, {3, 1.3}, {
+                    4, 4.}}]}, {
+                  GrayLevel[0.7], 
+                  AbsoluteThickness[1.5], 
+                  
+                  BSplineCurveBox[{{-1, 2}, {0, 2}, {1, 1}, {2, 1}, {4, 2}, {
+                   5, 4}}]}}, {}}, Axes -> {False, False}, 
+               AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, 
+               BaseStyle -> {FontFamily -> "Arial", 
+                 AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+               Frame -> {{True, True}, {True, True}}, 
+               FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+               Directive[
+                 Thickness[Tiny], 
+                 GrayLevel[0.7]], FrameTicks -> {{None, None}, {None, None}}, 
+               GridLines -> {None, None}, 
+               LabelStyle -> {FontFamily -> "Arial"}, 
+               Method -> {"ScalingFunctions" -> None}, 
+               PlotRange -> {All, All}, PlotRangeClipping -> True, 
+               PlotRangePadding -> {{1, 1}, {1, 1}}, Ticks -> {None, None}, 
+               Axes -> False, AspectRatio -> 1, ImageSize -> 
+               Dynamic[{
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+               FrameTicks -> None, FrameStyle -> Directive[
+                 Opacity[0.5], 
+                 Thickness[Tiny], 
+                 RGBColor[0.368417, 0.506779, 0.709798]]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"RandomForest\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Feature type: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\"NumericalVector\"", 
+                    StyleBox[
+                    TemplateBox[{"\" (\"", "13", "\")\""}, "RowDefault"], 
+                    GrayLevel[0.5], StripOnInput -> False]}, "RowDefault"], 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                   "\"Number of training examples: \"", 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                   TagBox["338", "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic], BaselinePosition -> 
+        Baseline], DynamicModuleValues :> {}], 
+      StyleBox["]", "NonInterpretableSummary"]}]},
+   "CopyTag",
+   DisplayFunction->(#& ),
+   InterpretationFunction->("PredictorFunction[\[Ellipsis]]"& )],
+  False,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.701406655045929*^9, 3.701406684248901*^9}, 
+   3.7014068770039997`*^9, 3.701407545850401*^9, 3.701407786461031*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PredictorInformation", "[", "bostonpd", "]"}]], "Input",
+ CellChangeTimes->{{3.701406660281221*^9, 3.701406681531526*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
-   FrameBox[GridBox[{
-      {
-       ItemBox[
-        TagBox[
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "29.`", ",", "\<\"female\"\>"}], 
-             "}"}], "\[Rule]", "\<\"survived\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "0.9167`", ",", "\<\"male\"\>"}], 
-             "}"}], "\[Rule]", "\<\"survived\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "2.`", ",", "\<\"female\"\>"}], 
-             "}"}], "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "30.`", ",", "\<\"male\"\>"}], "}"}],
-             "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "25.`", ",", "\<\"female\"\>"}], 
-             "}"}], "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "48.`", ",", "\<\"male\"\>"}], "}"}],
-             "\[Rule]", "\<\"survived\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "63.`", ",", "\<\"female\"\>"}], 
-             "}"}], "\[Rule]", "\<\"survived\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "39.`", ",", "\<\"male\"\>"}], "}"}],
-             "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "53.`", ",", "\<\"female\"\>"}], 
-             "}"}], "\[Rule]", "\<\"survived\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"1st\"\>", ",", "71.`", ",", "\<\"male\"\>"}], "}"}],
-             "\[Rule]", "\<\"died\"\>"}], ",", 
-           TemplateBox[{"1289"},
-            "OutputSizeLimit`Skeleton",
-            DisplayFunction->(FrameBox[
-              RowBox[{"\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}],
-               Background -> GrayLevel[0.75], 
-              BaseStyle -> {
-               "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                ShowStringCharacters -> False}, BaselinePosition -> Baseline, 
-              ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
-              FrameStyle -> None, RoundingRadius -> 7]& )], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", "27.`", ",", "\<\"male\"\>"}], "}"}],
-             "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", "15.`", ",", "\<\"female\"\>"}], 
-             "}"}], "\[Rule]", "\<\"survived\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", "45.5`", ",", "\<\"male\"\>"}], 
-             "}"}], "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", 
-              RowBox[{"Missing", "[", "]"}], ",", "\<\"male\"\>"}], "}"}], 
-            "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", 
-              RowBox[{"Missing", "[", "]"}], ",", "\<\"male\"\>"}], "}"}], 
-            "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", "14.5`", ",", "\<\"female\"\>"}], 
-             "}"}], "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", 
-              RowBox[{"Missing", "[", "]"}], ",", "\<\"female\"\>"}], "}"}], 
-            "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", "26.5`", ",", "\<\"male\"\>"}], 
-             "}"}], "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", "27.`", ",", "\<\"male\"\>"}], "}"}],
-             "\[Rule]", "\<\"died\"\>"}], ",", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"\<\"3rd\"\>", ",", "29.`", ",", "\<\"male\"\>"}], "}"}],
-             "\[Rule]", "\<\"died\"\>"}]}], "}"}],
-         Short[#, 5]& ],
-        BaseStyle->{Deployed -> False},
-        StripOnInput->False]},
-      {GridBox[{
-         {
-          TagBox[
-           TooltipBox[
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource[
-                "FEStrings", "sizeBriefExplanation"], StandardForm],
-               ImageSizeCache->{58., {2., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarCategory",
-             StripOnInput->False],
-            StyleBox[
-             DynamicBox[
-              ToBoxes[
-               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
-               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
-             False]],
-           Annotation[#, 
-            Style[
-             Dynamic[
-              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
-             DynamicUpdating -> True], "Tooltip"]& ], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
-                StandardForm],
-               ImageSizeCache->{50., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
-                StandardForm]],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, 25}],
-           Appearance->None,
-           
-           ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 15, 18108933170782510852, 5/2],
-           Enabled->True,
-           Evaluator->Automatic,
-           Method->"Queued"], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
-                StandardForm],
-               ImageSizeCache->{56., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
-                StandardForm]],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, 25}],
-           Appearance->None,
-           
-           ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 15, 18108933170782510852, 5 2],
-           Enabled->True,
-           Evaluator->Automatic,
-           Method->"Queued"], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
-                StandardForm],
-               ImageSizeCache->{42., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
-                StandardForm],
-               ImageSizeCache->{42., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, 25}],
-           Appearance->None,
-           
-           ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 15, 18108933170782510852, Infinity],
-           Enabled->True,
-           Evaluator->Automatic,
-           Method->"Queued"], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm],
-               ImageSizeCache->{74., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm],
-               ImageSizeCache->{74., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, 25}],
-           Appearance->None,
-           ButtonFunction:>FrontEndExecute[{
-              FrontEnd`SetOptions[
-              FrontEnd`$FrontEnd, 
-               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
-              FrontEnd`FrontEndToken["PreferencesDialog"]}],
-           Evaluator->None,
-           Method->"Preemptive"]}
-        },
-        AutoDelete->False,
-        FrameStyle->GrayLevel[0.85],
-        GridBoxDividers->{"Columns" -> {False, {True}}},
-        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-        GridBoxSpacings->{"Columns" -> {{2}}}]}
-     },
-     DefaultBaseStyle->"Column",
-     GridBoxAlignment->{
-      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-       "RowsIndexed" -> {}},
-     GridBoxDividers->{
-      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
-       "RowsIndexed" -> {}},
-     GridBoxItemSize->{
-      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-       "RowsIndexed" -> {}},
-     GridBoxSpacings->{"Columns" -> {
-         Offset[0.27999999999999997`], {
-          Offset[0.5599999999999999]}, 
-         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-         Offset[0.2], 
-         Offset[1.2], {
-          Offset[0.4]}, 
-         Offset[0.2]}, "RowsIndexed" -> {}}],
-    Background->RGBColor[0.9657, 0.9753, 0.9802],
-    FrameMargins->{{12, 12}, {0, 15}},
-    FrameStyle->GrayLevel[0.85],
-    RoundingRadius->5,
-    StripOnInput->False],
+   StyleBox[
+    FrameBox[GridBox[{
+       {
+        ItemBox[
+         FrameBox[
+          StyleBox["\<\"Predictor information\"\>", "SuggestionsBarText",
+           StripOnInput->False,
+           FontSize->Larger],
+          FrameMargins->{{10, 0}, {-5, 5}},
+          FrameStyle->None,
+          StripOnInput->False],
+         Alignment->{Left, Bottom},
+         Background->RGBColor[0.93119, 0.93119, 0.93119],
+         Frame->{{False, False}, {True, False}},
+         FrameStyle->Opacity[0.1],
+         ItemSize->{Automatic, 1},
+         StripOnInput->False]},
+       {
+        ItemBox[
+         FrameBox[
+          TagBox[GridBox[{
+             {
+              StyleBox["\<\"Method\"\>",
+               StripOnInput->False,
+               LineOpacity->0.8,
+               FrontFaceOpacity->0.8,
+               BackFaceOpacity->0.8,
+               Opacity->0.8,
+               FontWeight->"SemiBold",
+               FontOpacity->0.8], "\<\"Random forest\"\>"},
+             {
+              StyleBox["\<\"Number of features\"\>",
+               StripOnInput->False,
+               LineOpacity->0.8,
+               FrontFaceOpacity->0.8,
+               BackFaceOpacity->0.8,
+               Opacity->0.8,
+               FontWeight->"SemiBold",
+               FontOpacity->0.8], "1"},
+             {
+              StyleBox["\<\"Number of training examples\"\>",
+               StripOnInput->False,
+               LineOpacity->0.8,
+               FrontFaceOpacity->0.8,
+               BackFaceOpacity->0.8,
+               Opacity->0.8,
+               FontWeight->"SemiBold",
+               FontOpacity->0.8], "338"},
+             {
+              StyleBox["\<\"Number of trees\"\>",
+               StripOnInput->False,
+               LineOpacity->0.8,
+               FrontFaceOpacity->0.8,
+               BackFaceOpacity->0.8,
+               Opacity->0.8,
+               FontWeight->"SemiBold",
+               FontOpacity->0.8], "10"}
+            },
+            AutoDelete->False,
+            
+            BaseStyle->{
+             FontWeight -> "Light", FontFamily -> ".SF NS Text", NumberMarks -> 
+              False},
+            
+            GridBoxAlignment->{
+             "Columns" -> {Right, {Left}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+            GridBoxDividers->{"Columns" -> {False, {
+                 Opacity[0.15]}, False}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{1.}}, "RowsIndexed" -> {}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], 
+                Offset[2.0999999999999996`], {
+                 Offset[1.75]}, 
+                Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[0.8]}, 
+                Offset[0.2]}, "RowsIndexed" -> {}}],
+           "Grid"],
+          FrameMargins->{{10, 10}, {10, 5}},
+          FrameStyle->None,
+          StripOnInput->False],
+         Alignment->Left,
+         BaseStyle->{Deployed -> False},
+         StripOnInput->False]}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxDividers->{
+       "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], 
+          Offset[1.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Background->RGBColor[0.9802, 0.9802, 0.9802],
+     FrameMargins->{{0, 0}, {0, 0}},
+     FrameStyle->GrayLevel[0.85],
+     RoundingRadius->5,
+     StripOnInput->False],
+    StripOnInput->False,
+    LineBreakWithin->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[15]]], "Output",
- CellChangeTimes->{3.7003220385964746`*^9}]
+  Association[
+  "Method" -> "Random forest", "Number of features" -> 1, 
+   "Number of training examples" -> 338, "Number of trees" -> 10]]], "Output",\
+
+ CellChangeTimes->{{3.7014066712113457`*^9, 3.701406686138359*^9}, 
+   3.701406879118904*^9, 3.7014075483921213`*^9, 3.701407788407344*^9}]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.700322085398357*^9, 3.700322093756443*^9}, {
-  3.700322131032535*^9, 3.7003221323626547`*^9}, {3.700322169691803*^9, 
-  3.700322197555739*^9}}]
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bostonpd", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "0.0324", ",", "19", ",", "3.22", ",", "0.3", ",", "0.563", ",", "2.354", 
+    ",", "70.0", ",", "5.03", ",", "0.5", ",", "284", ",", "14.3", ",", 
+    "234.5", ",", "3.09"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.701407552119622*^9, 3.701407657802002*^9}, {
+  3.70140782426921*^9, 3.701407825064706*^9}}],
+
+Cell[BoxData["26.62675396825397`"], "Output",
+ CellChangeTimes->{3.70140765852157*^9, 3.701407791667078*^9, 
+  3.701407844867437*^9}]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1440, 803},
@@ -819,31 +891,44 @@ Cell[580, 22, 127, 1, 53, "Subsection"],
 Cell[710, 25, 880, 18, 49, "Text"],
 Cell[CellGroupData[{
 Cell[1615, 47, 511, 12, 32, "Input"],
-Cell[2129, 61, 7685, 155, 60, "Output"]
+Cell[2129, 61, 7773, 159, 60, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9851, 221, 176, 3, 32, "Input"],
-Cell[10030, 226, 137, 2, 32, "Output"]
+Cell[9939, 225, 176, 3, 32, "Input"],
+Cell[10118, 230, 137, 2, 32, "Output"]
 }, Open  ]],
-Cell[10182, 231, 112, 1, 30, "Text"],
+Cell[10270, 235, 112, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[10319, 236, 688, 18, 32, "Input"],
-Cell[11010, 256, 3420, 70, 237, "Output"]
+Cell[10407, 240, 688, 18, 32, "Input"],
+Cell[11098, 260, 3420, 70, 237, "Output"]
 }, Open  ]],
-Cell[14445, 329, 174, 4, 30, "Text"],
+Cell[14533, 333, 174, 4, 30, "Text"],
 Cell[CellGroupData[{
-Cell[14644, 337, 142, 2, 32, "Input"],
-Cell[14789, 341, 4827, 132, 177, "Output"]
+Cell[14732, 341, 142, 2, 32, "Input"],
+Cell[14877, 345, 4827, 132, 177, "Output"]
+}, Open  ]],
+Cell[19719, 480, 122, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[19866, 485, 156, 2, 32, "Input"],
+Cell[20025, 489, 1013, 26, 54, "Output"]
+}, Open  ]],
+Cell[21053, 518, 404, 9, 32, "Input"],
+Cell[CellGroupData[{
+Cell[21482, 531, 150, 3, 32, "Input"],
+Cell[21635, 536, 343, 7, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19653, 478, 315, 7, 32, "Input"],
-Cell[19971, 487, 253, 4, 32, "Output"]
+Cell[22015, 548, 171, 3, 32, "Input"],
+Cell[22189, 553, 8194, 164, 61, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20261, 496, 296, 7, 32, "Input"],
-Cell[20560, 505, 11447, 285, 161, "Output"]
+Cell[30420, 722, 146, 2, 32, "Input"],
+Cell[30569, 726, 4519, 124, 154, "Output"]
 }, Open  ]],
-Cell[32022, 793, 192, 3, 32, "Input"]
+Cell[CellGroupData[{
+Cell[35125, 855, 385, 8, 32, "Input"],
+Cell[35513, 865, 133, 2, 32, "Output"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
